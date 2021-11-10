@@ -20,7 +20,7 @@ const note = mongoose.model("Note", notesSchema)
 
 //checking our express server
 app.get("/", function(req, res){
-    res.file (_dirname + "/index.html");
+    res.sendFile(__dirname + "/index.html");
 })
 
 app.listen(3000, function(){
